@@ -1,0 +1,25 @@
+{
+  "name": "azure-functions-ts-lab",
+  "version": "1.0.0",
+  "description": "Small TypeScript Azure Functions app: cost summary API with tests, Bicep and GitHub Actions.",
+  "main": "dist/functions/*.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start": "npm run build && func start"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "author": "Mynul Islam",
+  "license": "MIT"
+}
